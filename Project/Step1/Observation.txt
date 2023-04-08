@@ -1,0 +1,5 @@
+Step1: Check all deployment and service ---> Status crash loop back off
+Step2: Check logs pod hello-world ----> failed heath check because cant connect to path /nginx_status, but logs mention that it should be /healthz
+Step3: Update correct path to /healthz 
+Step4: Apply deployment again 
+Step 5: The url now can be reached, logs got 200 status code 
